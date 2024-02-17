@@ -662,5 +662,7 @@ cmp.setup {
   },
 }
 
+vim.keymap.set('n', '<leader>ft', ':FloatermToggle<CR>', { desc = 'toggle floaterm on' })
+vim.keymap.set('t', '<leader>ft', '<C-\\><C-n>:FloatermToggle<CR>', { desc = 'Toggle floaterm off' })
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
